@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurred Quote Overlay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('url.jpg') no-repeat center center/cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px 60px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 70%;
+}
+
+.quote {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.author {
+    font-size: 22px;
+    color: #e0e0e0;
+}
+
+
+</style>
+
+
+<body>
+    <div class="quote-container">
+        <p class="quote">"The only journey is the one within."</p>
+        <p class="author">- Rainer Maria Rilke</p>
+    </div>
+</body>
+</html>
